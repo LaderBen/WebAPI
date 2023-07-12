@@ -3,16 +3,16 @@ package com.antra.webapi.entity;
 import java.util.Date;
 
 public class Transaction {
-    private Integer id;
+    private Integer user_id;
     private Integer purchase;
     private Date date;
 
-    public Integer getId() {
-        return id;
+    public Integer getUser_id() {
+        return user_id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
     }
 
     public Integer getPurchase() {
@@ -31,8 +31,8 @@ public class Transaction {
         this.date = date;
     }
 
-    public Transaction(Integer id, Integer purchase, Date date) {
-        this.id = id;
+    public Transaction(Integer user_id, Integer purchase, Date date) {
+        this.user_id = user_id;
         this.purchase = purchase;
         this.date = date;
     }
