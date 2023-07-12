@@ -26,6 +26,12 @@ public class UserController {
         this.userService = userService;
     }
 
+    /**
+     *
+     * @param id
+     * @return user
+     *  just for testing the function
+     */
     @GetMapping("/{id}")
     public ResponseEntity<?> getUserByid(@PathVariable("id") int id) {
         Optional<User> opt = userService.findUserById(id);
@@ -39,6 +45,14 @@ public class UserController {
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
 
+    /**
+     *
+     * @param id
+     * @param year
+     * @return String message
+     * to call this api here is the example:
+     *   localhost:8080/user/1?year=2023
+     */
     @GetMapping("/reward/{id}")
     public ResponseEntity<?> getUserRewards(@PathVariable("id") int id, @PathParam("year") int year) {
         List<Integer> rewards = userService.getMonthlyRewards(id, year);
