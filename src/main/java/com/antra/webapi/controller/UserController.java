@@ -51,7 +51,7 @@ public class UserController {
      * @param year
      * @return String message
      * to call this api here is the example:
-     *   localhost:8080/user/1?year=2023
+     *   localhost:8080/user/reward/1?year=2023
      */
     @GetMapping("/reward/{id}")
     public ResponseEntity<?> getUserRewards(@PathVariable("id") int id, @PathParam("year") int year) {
