@@ -1,3 +1,3 @@
 # WebAPI
 project link:
-https://github.com/LaderBen/WebAPI/edit/main/README.md
+https://github.com/LaderBen/WebAPI
